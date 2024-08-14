@@ -8,12 +8,12 @@ There are recurring tasks, like cleaning the dishwasher, that have to be done re
 
 Have a very easy, smartphone-friendly system that tells you which tasks need to be done ‘as soon as you can’ and with a tap reschedules the task after the necessary time.
 
-Non più di tre per visualizzazione
+No more than three per view
 
-Un sistema "intelligente" peserà quelli più importanti in quel momento. E questo è un bel gioco :)
+A "smart" system will weight the most important ones at that moment. And that's a nice game :)
 
 ## Add my personal task
 
-Aggiungere task personali legati a un luogo (categoria) o un market place
+Add personal tasks related to a place (category) or a market place
 
-Aggiungere multiutenza così che anche mia moglie possa aggiungere i suoi task
+Add multi-user so my wife can add her tasks too
