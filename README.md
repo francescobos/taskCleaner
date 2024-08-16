@@ -14,6 +14,6 @@ A "smart" system will weight the most important ones at that moment. And that's 
 
 ## Add my personal task
 
-Add personal tasks related to a place (category) or a market place
+Add personal tasks related to a place (office, home...) or a market place (tigotà, chinese mega shop!). Like backup data & reschedule.
 
 Add multi-user so my wife can add her tasks too

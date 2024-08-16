@@ -1,0 +1,38 @@
+{
+  "name": "MasterData",
+  "version": "1.0.0",
+  "description": "MasterData",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3FESTO/ANY3DP_MasterData.git"
+  },
+  "keywords": [],
+  "author": "3Festo SRL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3FESTO/ANY3DP_MasterData/issues"
+  },
+  "homepage": "https://github.com/3FESTO/ANY3DP_MasterData#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.3",
+    "sequelize-cli": "^6.6.2"
+  }
+}

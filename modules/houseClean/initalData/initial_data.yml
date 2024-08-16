@@ -1,0 +1,16 @@
+houseTask: 
+  - name: "Pulire il bagno"
+    description: "Pulire il bagno con i prodotti specifici"
+    frequency_days: 7
+  - name: "Pulire la cucina"
+    description: "Pulire la cucina con i prodotti specifici"
+    frequency_days: 7
+  - name: "Pulire il pavimento"
+    description: "Pulire il pavimento con la scopa e il mocio"
+    frequency_days: 7
+  - name: "Pulire le finestre"
+    description: "Pulire le finestre con il detergente per vetri"
+    frequency_days: 30
+  - name: "Pulire il frigorifero"
+    description: "Pulire il frigorifero con il detergente specifico"
+    frequency_days: 30
