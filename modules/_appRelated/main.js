@@ -1,8 +1,6 @@
 import { dbSync } from './dbSync.js';
 import { prepareDir } from './utils.js';
-
-// import { startListener } from './listeners/main.js';
-
+import { startListener } from './listener.js';
 
 export const startApp = async () => {
     try {
@@ -10,8 +8,7 @@ export const startApp = async () => {
         await prepareDir();
         await dbSync();
 
-        //startListener();
-        // end fetch module load server ciaooo
+        startListener();
 
     } catch (error) {
         console.log('Error in avvioApp', error);    

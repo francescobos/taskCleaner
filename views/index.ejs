@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaccia Touch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <% if (tasks.length > 0) { %>
+            <% tasks.forEach(task => { %>
+                <button type="button" class="btn btn-primary btn-lg" onclick="showOverlay('<%= task.name %>', '<%= task.description %>', '<%= task.last_time_done %>')">
+                    <span><%= task.name %></span><br>
+                    <span><%= task.description %></span><br>
+                    <span><%= formatDate(new Date(task.last_time_done), 'dd/MM/yyyy') %></span>
+                </button>
+        <% });} %>
+
+        <!-- <button type="button" class="btn btn-success btn-lg" onclick="showOverlay('Attività 2', 'Descrizione breve 2', 'Data 2')">
+            <span>Tipo attività: Attività 2</span><br>
+            <span>Descrizione breve</span><br>
+            <span>Data: 02/02/2024</span>
+        </button>
+
+        <button type="button" class="btn btn-warning btn-lg" onclick="showOverlay('Attività 3', 'Descrizione breve 3', 'Data 3')">
+            <span>Tipo attività: Attività 3</span><br>
+            <span>Descrizione breve</span><br>
+            <span>Data: 03/03/2024</span>
+        </button> -->
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <h4 id="overlay-title">Conferma</h4>
+            <p id="overlay-text">Vuoi confermare l'azione?</p>
+            <div class="overlay-buttons">
+                <button id="confirm-button" class="btn btn-success">Conferma</button>
+                <button onclick="hideOverlay()" class="btn btn-danger">Annulla</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const showOverlay = (activity, description, date) => {
+            document.getElementById('overlay-title').innerText = `Conferma ${activity}`;
+            document.getElementById('overlay-text').innerText = `Tipo attività: ${activity}\nDescrizione: ${description}\nData: ${date}`;
+            document.getElementById('overlay').style.display = 'flex';
+        };
+
+        const hideOverlay = () => {
+            document.getElementById('overlay').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
